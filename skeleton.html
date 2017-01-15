@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Broadside Pirates</title>
+
+    <!-- knjizice -->
+    <script src="libs/three.js"></script> <!-- Vkljucimo three.js knjizico. -->
+    <script src="libs/stats.js"></script> <!-- Da nam kaze FPS-je zgoraj levo. -->
+    <script src="libs/dat.gui.js"></script> <!-- Za podporo GUI desno zgoraj. -->
+    <script type="text/javascript" src="libs/OBJLoader.js"></script> <!-- Za nalaganje 3D modelov. -->
+    <script type="text/javascript" src="libs/MTLLoader.js"></script> <!-- Za nalaganje 3D modelov. -->
+    <script type="text/javascript" src="libs/OBJMTLLoader.js"></script> <!-- Za nalaganje 3D modelov. -->
+
+    <!-- Knjizice iz strani https://github.com/jbouny/ocean -->
+    <!-- Water shader -->
+    <script src="libs/water-material.js"></script>
+
+    <!-- nasa koda -->
+    <script src="js/Coin.js"></script>
+    <script src="js/Krogla.js"></script>
+    <script src="js/Ladja.js"></script>
+    <script src="js/LadjaNPC.js"></script>
+    <script src="js/Water.js"></script>
+    <script src="js/main.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        #Healthbar {
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+        }
+        #Coins {
+            position: absolute;
+            bottom: 0;
+            right: 10px;
+
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            font-size: 2.2rem;
+            font-weight: bold;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- div element za prikazovanje FPS-jev. -->
+    <div id="Stats-output"></div>
+    <!-- Div which will hold the Output. -->
+    <div id="WebGL-output"></div>
+    <!-- HUD -->
+    <div id="Healthbar">
+    </div>
+    <div id="Coins">
+        <img src="textures/coin_small.png" alt="coin">
+        x <span id="CollectedCoins">0</span>
+    </div>
+</body>
+</html>
