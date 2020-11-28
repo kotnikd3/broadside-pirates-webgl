@@ -10,3 +10,4 @@ A demo game build in WebGL (using library Three.js) by Klemen Červ (klemen.cerv
 
 ## Run the game
 Just open **index.html** file.
+![logo](webgl.png)
