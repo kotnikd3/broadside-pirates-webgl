@@ -2,7 +2,7 @@
 # Broadside pirates - WebGL
 
 ## Available on 
-https://www.kotnik.si/broadside-pirates-webgl/  
+[https://www.pirates.kotnik.si/](https://www.pirates.kotnik.si/)
 For some reason the online version is quite laggy - maybe because its hosted on Github. The local version works fine.
 
 ## About the project  
